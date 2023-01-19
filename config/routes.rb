@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   ### SHOW ###
   get 'blogs/:id' => 'blog#show', as: 'blog'
   # root "articles#index"
+  ### DELETE ###
+  delete 'blogs/:id' => 'blog#destroy', as: 'delete_blog'
 end

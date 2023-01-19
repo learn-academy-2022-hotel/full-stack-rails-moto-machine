@@ -1,6 +1,7 @@
-<h3><%= @blog.title %></h3>
-<h3> Have you heard of it?
-<%= @blog.content %>
+<h2>Have you heard of the Blog: <%= @blog.title %></h2>
+<h2>It covers: <%= @blog.content %>
+</h2>
 
-</h3>
 <p><%= link_to 'All the blogs', blogs_path %></p>
+
+<p><%= button_to 'Remove Blog', delete_blog_path, method: :delete %></p>
