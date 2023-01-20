@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   get 'blogs/new' => 'blog#new', as: 'new_blog'
   ### SHOW ###
   get 'blogs/:id' => 'blog#show', as: 'blog'
+  ### CREATE ###
+  post 'blogs' => 'blog#create'
   # root "articles#index"
   ### DELETE ###
   delete 'blogs/:id' => 'blog#destroy', as: 'delete_blog'
